@@ -25,7 +25,7 @@ function NavBarDemo() {
 export default function Home() {
   return (
     <>
-    <div className="bg-neutral-950/30 max-w-[92%] lg:max-w-[1000px] mx-auto">
+    <div className="">
       <NavBarDemo />
       <section id="inicio"></section>
       <HeroSection className="max-w-[92%] lg:max-w-[1000px] mx-auto bg-cyan-950"

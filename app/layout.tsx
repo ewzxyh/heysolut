@@ -16,6 +16,51 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hey Solut | Soluções Digitais Personalizadas",
   description: "Desenvolvemos soluções digitais personalizadas para atender às necessidades específicas do seu negócio, com foco em performance e experiência do usuário.",
+  icons: {
+    icon: [
+      {
+        url: "/heysolut-favicon.png",
+        type: "image/png",
+      }
+    ],
+    apple: [
+      {
+        url: "/heysolut-favicon.png",
+        type: "image/png",
+      }
+    ],
+  },
+  authors: [
+    {
+      name: "Hey Solut",
+      url: "https://heysolut.com.br",
+    },
+  ],
+  keywords: [
+    "soluções digitais",
+    "desenvolvimento web",
+    "inteligência artificial",
+    "automação",
+    "eficiência",
+    "Hey Solut"
+  ],
+  creator: "Hey Solut",
+  publisher: "Hey Solut",
+  openGraph: {
+    title: "Hey Solut | Soluções Digitais Personalizadas",
+    description: "Desenvolvemos soluções digitais personalizadas para atender às necessidades específicas do seu negócio, com foco em performance e experiência do usuário.",
+    images: [
+      {
+        url: "/heysolut-favicon.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hey Solut | Soluções Digitais Personalizadas",
+    description: "Desenvolvemos soluções digitais personalizadas para atender às necessidades específicas do seu negócio, com foco em performance e experiência do usuário.",
+    images: ["/heysolut-favicon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="pt-BR" className="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-cyan-950 border-none`}
       >

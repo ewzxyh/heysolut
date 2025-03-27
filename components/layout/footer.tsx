@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CodeXmlIcon } from "lucide-react";
 function Footer() {
   return (
-    <footer className="py-12 px-4 md:px-6 bg-gradient-to-b from-cyan-500/25 to-cyan-950/90 border-x border-b border-cyan-500/25">
+    <footer className="w-[92%] lg:w-[1000px] mx-auto py-12 px-4 md:px-6 bg-gradient-to-b from-cyan-500/25 to-cyan-950/90 border-x border-b border-cyan-500/25">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           <div className="md:max-w-xs lg:basis-1/3 pr-4">
