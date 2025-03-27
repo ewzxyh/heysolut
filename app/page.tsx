@@ -14,9 +14,9 @@ import { Footer } from "@/components/layout/footer";
 function NavBarDemo() {
   const navItems = [
     { name: 'Home', url: '/', icon: HomeIcon },
-    { name: 'Sobre', url: '/sobre', icon: User },
-    { name: 'Projetos', url: '/projetos', icon: Briefcase },
-    { name: 'Contato', url: '/contato', icon: FileText }
+    { name: 'Sobre', url: '/', icon: User },
+    { name: 'Projetos', url: '/', icon: Briefcase },
+    { name: 'Contato', url: 'https://wa.me/5562998717387/text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20funcionarios%20de%20IA', icon: FileText }
   ]
 
   return <NavBar items={navItems} />
@@ -37,7 +37,7 @@ export default function Home() {
         description="Automação, eficiência, economia e crescimento acelerado com Funcionários de IA.
 Substitua processos manuais por inteligência estratégica e obtenha resultados reais."
         ctaText="Começar Agora"
-        ctaHref="https://wa.me/5562998717387"
+        ctaHref="https://wa.me/5562998717387/text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20funcionarios%20de%20IA"
 
       />
       

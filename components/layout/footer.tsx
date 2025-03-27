@@ -88,12 +88,12 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://wa.me/5562998717387/text=Suporte%20Vendas" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                  <Link href="https://wa.me/5562998717387/text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20funcionarios%20de%20IA" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
                     Suporte Vendas
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://wa.me/5562998717387/text=Fale%20com%20um%20especialista" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                  <Link href="https://wa.me/5562998717387/text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20funcionarios%20de%20IA" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
                     Fale com um especialista
                   </Link>
                 </li>
