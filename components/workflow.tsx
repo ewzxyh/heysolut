@@ -249,15 +249,24 @@ const initialEdges: Edge[] = [
 function Flow() {
   const [nodes,, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-  const { fitView } = useReactFlow();
+  const { fitView, setViewport } = useReactFlow();
+
+  // Efeito para definir zoom inicial explicitamente
+  useLayoutEffect(() => {
+    // Define um zoom inicial alto
+    setTimeout(() => {
+      setViewport({ x: 100, y: 50, zoom: 0.7 });
+    }, 100);
+  }, [setViewport]);
 
   // Função memoizada para ajustar a visualização
   const handleResize = useCallback(() => {
     fitView({ 
-      padding: 0.5, // Aumentado para dar mais espaço nas bordas
+      padding: 0.5, // Reduzido para dar menos espaço nas bordas
       includeHiddenNodes: true,
-      minZoom: 0.5,
-      maxZoom: 1.5
+      minZoom: 1.0,
+      maxZoom: 2.0,
+      duration: 800
     });
   }, [fitView]);
 
@@ -360,10 +369,10 @@ function Flow() {
         onNodeDrag={onNodeDrag}
         onConnect={onConnect}
         nodeTypes={nodeTypes}
-        fitView
         minZoom={0.5}
         maxZoom={1.5}
-        defaultViewport={{ x: 0, y: 0, zoom: 0.6 }}
+        fitView={true}
+        defaultViewport={{ x: 0, y: 0, zoom: 1.0 }}
         proOptions={proOptions}
         className="react-flow-wrapper"
         snapToGrid={true}

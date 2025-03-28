@@ -19,7 +19,7 @@ function CTA() {
             <h3 className="text-3xl font-bold md:text-5xl tracking-tighter max-w-xl font-regular">
               Escale sua empresa com Funcionários de IA
             </h3>
-            <p className="text-lg bold leading-relaxed tracking-tight text-muted-foreground max-w-xl">
+            <p className="text-md bold leading-relaxed tracking-tight text-neutral-300 max-w-xl">
               A HeySolut oferece soluções inteligentes para otimizar processos,
               melhorar a experiência do cliente e acelerar o crescimento da sua empresa. 
               Descubra como a IA pode levar seu negócio para o próximo nível.
