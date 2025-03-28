@@ -32,6 +32,7 @@ export function StatsSection({ className, ...props }: StatsSectionProps) {
                 "w-1/2 md:w-1/4",
                 "border-r border-cyan-500/35",
                 "flex flex-col justify-center items-center py-8 px-4",
+                "hover:bg-cyan-500/40 transition-all duration-300",
                 index === 3 && "border-r-0",
                 index < 2 && "border-b border-cyan-500/35 md:border-b-0",
                 index === 1 && "border-r-0 md:border-r"

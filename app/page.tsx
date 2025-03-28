@@ -25,10 +25,10 @@ function NavBarDemo() {
 export default function Home() {
   return (
     <>
-    <div className="">
+    <div className="pb-20 md:py-0">
       <NavBarDemo />
       <section id="inicio"></section>
-      <HeroSection className="max-w-[92%] lg:max-w-[1000px] mx-auto bg-cyan-950"
+      <HeroSection className="max-w-[92%] lg:max-w-[1000px] mx-auto bg-gradient-to-b from-cyan-700 to-sky-950"
         title="Conheça os Funcionários de IA"
         subtitle={{
           regular: "Automação que faz mais, ",

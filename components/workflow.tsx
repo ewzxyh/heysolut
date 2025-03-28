@@ -56,7 +56,7 @@ const useResizeHandler = (callback: () => void) => {
 
 const CustomNode = ({ data }: { data: { label: React.ReactNode, type: string } }) => {
   return (
-    <div className="bg-cyan-950/50 border border-cyan-500/20 rounded-lg shadow-md p-2 w-auto h-auto">
+    <div className="bg-cyan-700/50 border border-cyan-500/20 rounded-lg shadow-md p-2 w-auto h-auto">
       <Handle type="target" position={Position.Top} isConnectable={true} />
       {data.label}
       <Handle type="source" position={Position.Bottom} isConnectable={true} />

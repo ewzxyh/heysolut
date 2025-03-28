@@ -74,7 +74,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-cyan-950 border-none`}
       >
         <HeroHighlight 
-          containerClassName="fixed inset-0 w-full h-full z-0"
+          containerClassName="fixed inset-0 w-full h-full z-0 bg-gradient-to-b from-cyan-900 to-sky-950"
           className="w-full h-full"
         >
           <div className="hidden">Fundo interativo</div>

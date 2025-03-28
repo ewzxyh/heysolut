@@ -7,6 +7,8 @@ import { AuroraText } from "@/components/magicui/aurora-text"
 import { FaRobot, FaWhatsapp } from "react-icons/fa6"
 import WorkflowBuilder from "@/components/workflow"
 import { RetroGrid } from "@/components/ui/retro-grid"
+import Image from "next/image"
+import Link from "next/link"
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string
@@ -57,8 +59,20 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
           
           <div className="z-10 mx-auto border-t border-b border-cyan-500/35">
 
-            <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 md:gap-8 lg:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 py-8 sm:py-10 md:py-12 lg:py-16 md:mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 md:gap-8 lg:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 py-8 sm:py-10 md:py-12 lg:py-16">
               <div className="lg:col-span-3 space-y-4 sm:space-y-1 md:space-y-2 lg:space-y-4">
+                
+                <Link href="/" className="flex items-start mb-8 sm:mb-8 md:mb-10 justify-start">
+                  <Image
+                    src="/heysolut-logo.png"
+                    alt="HeySolut Logo"
+                    width={280}
+                    height={120}
+                    className="h-auto w-[260px] sm:w-[280px] md:w-[280px] object-cover transition-all duration-300"
+                    priority
+                  />
+                </Link>
+                
                 <h1 className="text-sm text-cyan-200 group font-geist px-4 py-1.5 md:px-5 md:py-2 bg-gradient-to-tr from-cyan-300/5 via-cyan-400/5 to-transparent border-[2px] border-cyan-500/35 rounded-3xl w-fit flex items-center gap-2">
                   <FaRobot className="text-cyan-400 w-4 h-4 md:w-5 md:h-5" />
                   <span className="w-px h-3 md:h-4 bg-cyan-500/30"></span>
@@ -76,7 +90,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                   </AuroraText>
                 </h2>
 
-                <p className="text-neutral-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
+                <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
                   {description}
                 </p>
 

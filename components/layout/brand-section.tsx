@@ -27,7 +27,7 @@ export function BrandSection({ className, ...props }: BrandSectionProps) {
       {...props}
     >
 
-      <div className="w-full border border-cyan-500/35 backdrop-blur-sm max-w-[92%] lg:max-w-[1000px] mx-auto bg-cyan-950/10">
+      <div className="w-full border border-cyan-500/35 backdrop-blur-sm max-w-[92%] lg:max-w-[1000px] mx-auto bg-cyan-700">
 
         <div className="flex flex-wrap">
           {brands.map((brand, index) => (
@@ -38,11 +38,12 @@ export function BrandSection({ className, ...props }: BrandSectionProps) {
                 "flex justify-center items-center py-6 px-4",
                 "w-1/2 sm:w-1/3 md:w-1/6",
                 "border-r border-cyan-500/35",
+                "hover:bg-cyan-500/40 transition-all duration-300",
                 index === 5 && "border-r-0",
                 index % 2 === 1 && "sm:border-r-0 md:border-r",
                 index % 3 === 2 && "sm:border-r-0",
                 index % 6 === 5 && "md:border-r-0",
-                (index < 4) && "border-b",
+                (index < 4) && "border-b md:border-b-0",
                 (index >= 2 && index < 4) && "sm:border-b-0 md:border-b-0 md:border-r",
                 (index >= 4) && "sm:border-b-0"
               )}

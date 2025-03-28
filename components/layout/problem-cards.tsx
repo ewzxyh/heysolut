@@ -15,8 +15,8 @@ function ProblemCard({ title, description, icon, className }: ProblemCardProps) 
   return (
     <div 
       className={cn(
-        "bg-cyan-950/20 p-6 relative flex flex-col items-start w-full border border-cyan-500/35 backdrop-blur-sm",
-        "hover:bg-cyan-950/50 hover:border-cyan-500/40 transition-all duration-300",
+        "bg-cyan-700 p-6 relative flex flex-col items-start w-full border border-cyan-500/35 backdrop-blur-sm",
+        "hover:bg-cyan-500/10 hover:border-cyan-500/80 transition-all duration-300",
         className
       )}
     >
